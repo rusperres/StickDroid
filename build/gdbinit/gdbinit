@@ -1,0 +1,2 @@
+source /mnt/data/Projects/StickDroid/build/gdbinit/symbols
+source /mnt/data/Projects/StickDroid/build/gdbinit/connect

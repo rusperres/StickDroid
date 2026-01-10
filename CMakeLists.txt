@@ -10,3 +10,4 @@ idf_build_set_property(MINIMAL_BUILD ON)
 # Project name
 project(stick_droid)
 
+
