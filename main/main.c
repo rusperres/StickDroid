@@ -8,10 +8,11 @@ void app_main(void){
     gpio_reset_pin(LED_PIN);
     gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
     int ON = 0;
-     while(1){
+    while(1){
         ON = !ON;
         gpio_set_level(LED_PIN, ON);
         vTaskDelay(1000/portTICK_PERIOD_MS);
+        printf("Hello");
     }
 }
 
