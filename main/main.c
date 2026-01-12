@@ -9,7 +9,8 @@ void app_main(void){
     gpio_set_direction(LED_PIN, GPIO_MODE_INPUT);
     while(1){
         int STATE = gpio_get_level(LED_PIN);
-        printf("%d\n", state);
+        printf("%d\n", STATE);
+        vTaskDelay(1);
     }
 }
 
