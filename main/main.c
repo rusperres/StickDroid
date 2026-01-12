@@ -7,7 +7,6 @@
 void app_main(void){
     gpio_reset_pin(LED_PIN);
     gpio_set_direction(LED_PIN, GPIO_MODE_INPUT);
-    gpio_pullup_en(LED_PIN);
     while(1){
         int STATE = gpio_get_level(LED_PIN);
         printf("%d\n", STATE);
