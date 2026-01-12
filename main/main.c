@@ -6,13 +6,10 @@
 
 void app_main(void){
     gpio_reset_pin(LED_PIN);
-    gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
-    int ON = 0;
+    gpio_set_direction(LED_PIN, GPIO_MODE_INPUT);
     while(1){
-        printf("Serial OK\n");
-        ON = !ON;
-        gpio_set_level(LED_PIN, ON);
-        vTaskDelay(1000/portTICK_PERIOD_MS);
+        int STATE = gpio_get_level(LED_PIN);
+        printf("%d\n", state);
     }
 }
 
