@@ -3,7 +3,7 @@
 #include "driver/adc.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#define SW_PIN 13
+#define SW_PIN 34
 #define VRX_PIN 36
 #define VRY_PIN 39
 
